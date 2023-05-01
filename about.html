@@ -1,0 +1,90 @@
+<html>
+  <link rel="icon" type="image/x-icon" href="icon.svg">
+
+  <head >
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="styles.css">
+    </body>
+    
+</html>
+
+
+<div class="grid-container" >
+    <div class="grid-item">
+      <a class="alignbottom" id="back-button"><p1 class="home" >< back</p1></a>
+      1
+    </div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6
+      <h1 class="title" >about</h1>
+    </div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">
+
+      <p1 class="Text" style="line-height: 1.2;">
+        Kobi is an 18 year old creative who has always been a natural storyteller.
+        Growing up next to Byron Bay he quickly grew fond of the natural world and beautiful landscape that surrounded him,
+        particularly the ocean. It was only at 13 years old that Kobi bought his first camera and immediately fell in love with both photography and videography.
+
+      </p1>
+
+    </div>
+    <div class="grid-item">
+      
+      <p1 class="Text" style="line-height: 1.2;">
+        Having over 5 years experience sharing his perspectives from behind the lens, he is best known for his documentary style short films. 
+        His passion for all variations of content creation has partially shaped him into the person he is today.
+        Currently working as a freelance videographer and photographer.
+      </p1>
+    
+    </div>
+    <div class="grid-item"> </div>
+    <div class="grid-item">6</div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">1</div>    
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+  </div>   
+
+</div>
+
+<script>
+
+  function dropbutton(){
+    document.getElementById('dropdown').style.opacity="100%"; 
+    document.getElementById('dropdown').style.opacity="100%"; 
+    document.getElementById('dropdown').style.transform="translateY(0px)"; 
+    document.getElementById('dropdown').style.zIndex="2"; 
+    document.getElementById('dropicon').style.transform="rotate(180deg)"; 
+
+  }
+
+  function relbutton(){
+    document.getElementById('dropdown').style.opacity="00%"; 
+    document.getElementById('dropdown').style.transform="translateY(-30px)"; 
+    document.getElementById('dropdown').style.zIndex="-100"; 
+    document.getElementById('dropicon').style.transform="rotate(0deg)"; 
+
+  }
+
+  document.getElementById('back-button').addEventListener('click', function() {
+      if (window.history.length > 1) {
+          window.history.back();
+      } else {
+          window.location.href = 'index.html';
+      }
+  });
+
+</script>

@@ -1,0 +1,93 @@
+<html>
+  <link rel="icon" type="image/x-icon" href="icon.svg">
+
+  <head >
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crellous</title>
+    <link rel="stylesheet" href="styles.css">
+    </body>
+    
+</html>
+
+<video style="position: fixed; filter: blur(10px);"autoplay muted loop id="backgroundvideo" >
+  <source src="pexels-mario-krimer-14918247-1920x1080-24fps.mp4" type="video/mp4">
+</video>
+
+<div class="grid-container" >
+    <div class="grid-item">
+
+      1
+    </div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6
+      <h1 class="title" >crellous</h1>
+
+    
+    </div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">
+      
+      <div onmouseover="dropbutton()" onmouseleave="relbutton()" >
+
+        <a ><p1 class="Light" style="cursor: pointer;">my work <span id="dropicon"></span> </p1> </a>
+
+        <div id="dropdown" style="opacity: 0%; transform: translateY(-30px); z-index: -1;">
+          <a href="stills.html"><p1 class="dropdown">stills</p1></a>
+          <a href="design.html"><p1 class="dropdown">design</p1></a>
+          <a href="motion.html"><p1 class="dropdown">motion</p1></a>
+        </div>
+      
+    </div>
+    </div>  
+    <div class="grid-item">
+      <a href="contact.html" ><p1 class="Light" >contact</p1></a>
+
+      </div>
+    <div class="grid-item">
+      <a href="about.html" ><p1 class="Light" >about</p1></a>
+
+
+    </div>
+    <div class="grid-item">6</div>  
+    <div class="grid-item">
+
+
+      7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">1</div>    
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+  </div>   
+
+</div>
+
+<script>
+
+  function dropbutton(){
+    document.getElementById('dropdown').style.opacity="100%"; 
+    document.getElementById('dropdown').style.opacity="100%"; 
+    document.getElementById('dropdown').style.transform="translateY(0px)"; 
+    document.getElementById('dropdown').style.zIndex="2"; 
+    document.getElementById('dropicon').style.transform="rotate(180deg)"; 
+
+  }
+
+  function relbutton(){
+    document.getElementById('dropdown').style.opacity="00%"; 
+    document.getElementById('dropdown').style.transform="translateY(-30px)"; 
+    document.getElementById('dropdown').style.zIndex="-100"; 
+    document.getElementById('dropicon').style.transform="rotate(0deg)"; 
+
+  }
+
+</script>

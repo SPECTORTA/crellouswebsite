@@ -1,0 +1,73 @@
+<html>
+  <link rel="icon" type="image/x-icon" href="icon.svg">
+
+  <head >
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design</title>
+    <link rel="stylesheet" href="styles.css">
+    </body>
+    
+</html>
+
+
+<div class="grid-container" >
+    <div class="grid-item">
+      <a class="alignbottom" id="back-button"><p1 class="home" >< back</p1></a>
+      1
+    </div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6
+      <h1 class="title" >design</h1>
+    </div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item"></div>
+    <div class="grid-item"> </div>
+    <div class="grid-item"> </div>
+    <div class="grid-item">6</div>  
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">1</div>    
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>  
+    <div class="grid-item">4</div>
+  </div>   
+
+</div>
+
+<script>
+
+  function dropbutton(){
+    document.getElementById('dropdown').style.opacity="100%"; 
+    document.getElementById('dropdown').style.opacity="100%"; 
+    document.getElementById('dropdown').style.transform="translateY(0px)"; 
+    document.getElementById('dropdown').style.zIndex="2"; 
+    document.getElementById('dropicon').style.transform="rotate(180deg)"; 
+
+  }
+
+  function relbutton(){
+    document.getElementById('dropdown').style.opacity="00%"; 
+    document.getElementById('dropdown').style.transform="translateY(-30px)"; 
+    document.getElementById('dropdown').style.zIndex="-100"; 
+    document.getElementById('dropicon').style.transform="rotate(0deg)"; 
+
+  }
+
+  document.getElementById('back-button').addEventListener('click', function() {
+      if (window.history.length > 1) {
+          window.history.back();
+      } else {
+          window.location.href = 'index.html';
+      }
+  });
+
+</script>
